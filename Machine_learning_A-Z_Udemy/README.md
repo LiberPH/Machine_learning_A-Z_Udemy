@@ -34,4 +34,35 @@ Code and information of the machine learning course :D
 
 Finding the data for this course: https://www.superdatascience.com/machine-learning/
 
+## **IMPORTANT: Differentiate between dependent and independent variables**
+In any machine learning model we are going to use independent variables to predict a dependent variable
+
+## **Importing libraries**
+
+### Python
+
+Main libraries to be used:
+
+- numpy as np: includes mathematical tools
+- matplotlib.pyplot as plt: make nice plots
+- pandas as pd: import and manage datasets
+
+## Importing data sets
+
+### Python
+
+```python
+
+#Data Preprocessing
+
+## Importing the libraries
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Importing the dataset
+dataset = pd.read_csv('Data.csv')
+
+```
+
 
