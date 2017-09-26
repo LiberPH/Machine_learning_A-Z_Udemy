@@ -97,7 +97,7 @@ y = dataset.iloc[:, 3].values
 ```
 
 
-***Important for machine learning:*** Discriminate between the matrix of features and the independent variable vector.
+**Important for machine learning:** Discriminate between the matrix of features and the independent variable vector.
 
 Things about object oriented programming that they mentioned in the tutorial and I ususally forget:
 
@@ -109,7 +109,7 @@ And therefore there can be many objects of the same class, because we can build 
 A method is a tool we can use on the object to complete a specific action. So in this same example, a tool can be to open the main door of the house if a guest is coming. A method can also be seen as a function that is applied onto the object, takes some inputs (that were defined in the class) and returns some output.
 
 
-***Difference between python and R:***Arrays in R start in 1, while in pyton they start in 0.
+**Difference between python and R:** Arrays in R start in 1, while in pyton they start in 0.
 
 ### R
 
