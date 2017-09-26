@@ -49,6 +49,24 @@ Main libraries to be used:
 
 ## Importing data sets
 
+The first data set to work with is:
+
+| Country | Age | Salary | Purchased | 
+|---------|-----|--------|-----------| 
+| France  | 44  | 72000  | No        | 
+| Spain   | 27  | 48000  | Yes       | 
+| Germany | 30  | 54000  | No        | 
+| Spain   | 38  | 61000  | No        | 
+| Germany | 40  |        | Yes       | 
+| France  | 35  | 58000  | Yes       | 
+| Spain   |     | 52000  | No        | 
+| France  | 48  | 79000  | Yes       | 
+| Germany | 50  | 83000  | No        | 
+| France  | 37  | 67000  | Yes       | 
+
+Where: country, age and salary are dependent variables
+
+
 ### Python
 
 ```python
@@ -65,4 +83,8 @@ dataset = pd.read_csv('Data.csv')
 
 ```
 
+
+***Important for machine learning:*** Discriminate between the matrix of features and the dependent variable vector.
+
+***Difference between python and R:***Arrays in R start in 1, while in pyton they start in 0.
 
