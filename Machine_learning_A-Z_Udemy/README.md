@@ -83,8 +83,35 @@ dataset = pd.read_csv('Data.csv')
 
 ```
 
+Once done this, it is important to separate the matrix of features from the dependent variable vector (i don't know why, R doesn't need of this):
 
-***Important for machine learning:*** Discriminate between the matrix of features and the dependent variable vector.
+```python
+
+#Creating the matrix of features (all but last column)
+X = dataset.iloc[:, :-1].values
+
+#Create the dependent variable vector
+y = dataset.iloc[:, 3].values
+ 
+
+```
+
+
+***Important for machine learning:*** Discriminate between the matrix of features and the independent variable vector.
+
+Things about object oriented programming that they mentioned in the tutorial and I ususally forget:
+
+A class is the model of something we want to build. For example, if we make a house construction plan that gathers the instructions on how to build a house, then this construction plan is the class.
+
+An object is an instance of the class. So if we take that same example of the house construction plan, then an object is simply a house. A house (the object) that was built by following the instructions of the construction plan (the class).
+And therefore there can be many objects of the same class, because we can build many houses from the construction plan.
+
+A method is a tool we can use on the object to complete a specific action. So in this same example, a tool can be to open the main door of the house if a guest is coming. A method can also be seen as a function that is applied onto the object, takes some inputs (that were defined in the class) and returns some output.
+
 
 ***Difference between python and R:***Arrays in R start in 1, while in pyton they start in 0.
+
+### R
+
+You only need to set the directory (setwd) and read the data with read.csv (no pain here). I don't know why you don't need to separate the matrix of features (dependent) from the independent variable vector.
 
