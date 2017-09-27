@@ -92,6 +92,8 @@ X = dataset.iloc[:, :-1].values
 
 #Create the dependent variable vector
 y = dataset.iloc[:, 3].values
+
+#df.iloc[start row:end row,start column:end column],so,basically it helps in returning a specific rows and columns of the dataset df.
  
 
 ```
@@ -115,3 +117,8 @@ A method is a tool we can use on the object to complete a specific action. So in
 
 You only need to set the directory (setwd) and read the data with read.csv (no pain here). I don't know why you don't need to separate the matrix of features (dependent) from the independent variable vector.
 
+## Missing data O.o
+
+Options:
+1. Remove the lines with missing data (DANGEROUS, this could contain crucial information).
+2. Replace missing data with the mean of the column where the missing data appears (in python a library does it for you).
