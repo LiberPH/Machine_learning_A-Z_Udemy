@@ -122,3 +122,27 @@ You only need to set the directory (setwd) and read the data with read.csv (no p
 Options:
 1. Remove the lines with missing data (DANGEROUS, this could contain crucial information).
 2. Replace missing data with the mean of the column where the missing data appears (in python a library does it for you).
+
+### In python
+```python
+from sklearn.preprocessing import Imputer
+#axis means column=0 row=1
+imputer = Imputer(missing_values = 'NaN', strategy = "mean", axis = 0)
+imputer = imputer.fit(X[:,1:3]) #The upper bound is excluded O.o
+X[:, 1:3] = imputer.transform(X[:, 1:3])
+```
+
+### In R
+
+```R
+#Set working directory
+setwd("~/...")
+
+#Importing dataset
+dataset <-read.csv("Data.csv")
+
+#Taking care of missing values in Age
+dataset$Age = ifelse(is.na(dataset$Age),
+                    ave(dataset$Age, FUN = function(x) mean(x, na.rm = TRUE)),
+                    dataset$Age)
+```
