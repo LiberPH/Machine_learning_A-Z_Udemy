@@ -151,5 +151,12 @@ dataset$Age = ifelse(is.na(dataset$Age),
 - Categorical variables = they contain categories.
 - Categorical variables need to be encoded into numbers.
 
+**A problem may arise due to using numbers, because there is not a category larger than the other** 
+To avoid this dummy variables are created were there are as many columns as numbers of categories, denoting by one or zero the presence or abscence of each category.
+
+Example:
+
 ### In python
 A library does it for us.
+
+
