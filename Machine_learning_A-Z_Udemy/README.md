@@ -148,5 +148,8 @@ dataset$Age = ifelse(is.na(dataset$Age),
 ```
 ## Encoding categorical data
 
-Categorical variables = they contain categories.
-Catrgorical variables need to be encoded into numbers.
+- Categorical variables = they contain categories.
+- Categorical variables need to be encoded into numbers.
+
+### In python
+A library does it for us.
